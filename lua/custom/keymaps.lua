@@ -120,11 +120,6 @@ vim.keymap.set('n', '<leader>tdt', '<CMD>:TodoTrouble<CR>')
 vim.keymap.set('n', '<C-b>p', '<cmd>BufferPin<cr>')
 vim.keymap.set('n', '<C-b>d', '<cmd>BufferDelete<cr>')
 
--- copilot
-vim.g.copilot_no_tab_map = true
--- no idea why this only makes shift-enter work
-vim.api.nvim_set_keymap('i', '<C-M>', 'copilot#Accept("<CR>")', { silent = true, expr = true, noremap = true })
-
 -- local operate_tag = require("core.utils").operate_tag
 -- map('n', '<leader>b', function() operate_tag(vim.fn.line('.'), 'breakpoint()  # XXX BREAKPOINT') end)
 
